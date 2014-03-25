@@ -27,8 +27,10 @@ module Spree
     end
 
     private
+
       def find_favorite_product
         @favorite = spree_current_user.favorites.joins(:product).readonly(false).where(:spree_products => {:id => params[:id]}).first
       end
+
   end
 end

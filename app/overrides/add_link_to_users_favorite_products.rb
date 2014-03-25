@@ -5,4 +5,3 @@ Deface::Override.new(
   :text => "<% if spree_current_user %><li><%= link_to 'Favorite Products', favorite_products_path %></li><% end %>",
   :sequence => { :before => "auth_shared_login_bar"}
 )
-

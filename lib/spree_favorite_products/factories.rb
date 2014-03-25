@@ -3,4 +3,8 @@ FactoryGirl.define do
   #
   # Example adding this to your spec_helper will load these Factories for use:
   # require 'spree_favorite_products/factories'
+  factory :favorite, class: Spree::Favorite do
+    product
+    user
+  end
 end
